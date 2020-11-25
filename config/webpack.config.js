@@ -332,7 +332,7 @@ module.exports = function (webpackEnv) {
           'react-dom$': 'react-dom/profiling',
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
-        // '@static': paths.appStatic,
+        '@static': path.resolve(__dirname,'../src/static'),
         ...(modules.webpackAliases || {}),
       },
       plugins: [
