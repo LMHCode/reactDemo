@@ -1,0 +1,25 @@
+@keyframes toTop {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 600px;
+  }
+}
+
+.bubbles-ul {
+  display: flex;
+  height: 600px;
+  width: 600px;
+  position: relative;
+  .li {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .to-top-circle {
+    animation: toTop infinite;
+  }
+}

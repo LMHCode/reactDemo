@@ -1,4 +1,5 @@
 import HOME from './page/home';
+import BUBBLES from './page/bubbles';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -6,10 +7,8 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/" component={HOME} />
-        {/* <Route path="/food" component={Food} />
-        <Route path="/wiki" component={Wiki} />
-        <Route path="/profile" component={Profile} />
-        <Route exact component={Page404} /> */}
+        <Route path="/bubbles" component={BUBBLES} />
+        {/* <Route exact component={Page404} /> */}
       </Switch>
     </div>
   );
