@@ -3,14 +3,12 @@ import { connect } from 'react-redux'
 import store, {Action} from '../../store/index'
 
 const mapStateToProps = (state) => {
-  // console.log(state)
   return {
     num: state.tiger
   }
 } 
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-  // console.log(dispatch, ownProps)
   return {
     increase: () => dispatch(Action.increase),
     decrease: () => dispatch(Action.decrease)
@@ -28,14 +26,12 @@ class HOME extends React.Component {
   }
   
   componentDidMount () {
-    store.subscribe(() => {
-      let state = store.getState();
-      this.setState({
-        nums: state.tiger
-      })
-      console.log('state', state)
-    })
-    console.log('co', this.props)
+    // store.subscribe(() => {
+    //   let state = store.getState();
+    //   this.setState({
+    //     nums: state.tiger
+    //   })
+    // })
     this.setState({
       message: this.props.location.state && this.props.location.state.message || ''
     })

@@ -8,7 +8,6 @@ export default class HOME extends React.Component {
   }
 
   toDoExcelsise = () => {
-    // console.log(this)
     this.props.history.push({
       pathname: '/socail',
       state: {
